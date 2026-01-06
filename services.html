@@ -8,8 +8,23 @@
     <link rel="icon" type="image/x-icon" href="images/logo/flower_small.png">
 </head>
 <body>
+    <a id="top"></a>
+
     <header class="site-header">
-        <div class="logo"><a href="index.html"><img src="images/logo/titre_large.png" height="auto" width="30%"></a></div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo/titre_large.png" width="30%">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav class="main-nav">
             <a href="index.html">Accueil</a>
             <a href="chambres.html">Chambres</a>
@@ -17,7 +32,7 @@
             <a href="activites.html">Activités</a>
             <a href="reservations.html">Réservations</a>
             <a href="contact.html">Contact</a>
-            <a href="apropos.html">A propos</a>
+            <a href="apropos.html">À propos</a>
         </nav>
     </header>
 
@@ -30,7 +45,7 @@
 
     <main class="container">
         <h1>Nos services</h1>
-        
+
         <section class="center-text intro-section">
             <p>Au Hibictus Royal Hotel, chaque détail compte. Nous nous engageons à rendre votre séjour aussi fluide et agréable que possible, grâce à une palette de services soigneusement pensés pour répondre à tous vos besoins.</p>
         </section>
@@ -131,5 +146,8 @@
         <a href="mailto:contact@hibictus-royal.fr">Mail</a>
         <a href="tel:+33600426769">Téléphone</a>
     </footer>
+    <div class="back-to-top">
+        <a href="#top">↑</a>
+    </div>
 </body>
 </html>

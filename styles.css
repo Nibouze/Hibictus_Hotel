@@ -139,6 +139,7 @@ body {
     gap: 30px;
     padding: 18px;
     border-top: 3px solid #111;
+    text-align:center;
 }
 
 .site-footer a {
@@ -1580,3 +1581,105 @@ a h3 {
         min-height: auto;
     }
 }
+/* ====== BURGER ====== */
+.menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+    .burger span {
+        width: 28px;
+        height: 3px;
+        background: var(--accent);
+        transition: 0.3s;
+    }
+
+/* Animation burger */
+.menu-toggle:checked + .burger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .burger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ====== NAV RESPONSIVE CORRIGE ====== */
+@media (max-width: 1275px) {
+
+    .burger {
+        display: flex;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: var(--main_color_1);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+        z-index: 9999;
+    }
+
+        .main-nav a {
+            padding: 12px 0;
+            margin: 0;
+            font-size: 1.2em;
+            display: block;
+        }
+
+    /* Affichage du menu quand le checkbox est activé */
+    .menu-toggle:checked ~ .main-nav {
+        display: flex;
+    }
+
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+
+/* ===== Bouton Retour en Haut ===== */
+.back-to-top {
+    position: fixed;
+    bottom: 10vh;
+    right: 25px;
+    z-index: 9999;
+}
+
+    .back-to-top a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background: var(--accent);
+        color: var(--black);
+        font-size: 1.8em;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        transition: 0.3s ease;
+    }
+
+        .back-to-top a:hover {
+            background: #e6c200;
+            transform: translateY(-3px);
+        }
