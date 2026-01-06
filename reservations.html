@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Réservations - Hôtel</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Réservations - Hibictus Royal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo/flower_small.png">
 </head>
 <body>
     <header class="site-header">
-        <div class="logo"><img src="images/logo/titre_large.png" height="auto" width="30%"></div>
+        <div class="logo"><a href="index.html"><img src="images/logo/titre_large.png" height="auto" width="30%"></a></div>
         <nav class="main-nav">
             <a href="index.html">Accueil</a>
             <a href="chambres.html">Chambres</a>
@@ -20,29 +21,177 @@
         </nav>
     </header>
 
+    <section class="hero">
+        <div class="hero-inner">
+            <img name="hero-inner-reservations" src="images/reservations/reservations_banner.jpg" alt="Réservation Hôtel Hibictus Royal">
+        </div>
+        <p>Réservez votre séjour de rêve</p>
+    </section>
 
-<main class="container">
-<h1>Mes réservations</h1>
-<p>Lorem ipsum dolor sit amet. Mes réservations et historique.</p>
+    <main class="container">
+        <h1>Réserver votre séjour</h1>
+        
+        <section class="center-text intro-section">
+            <p>Planifiez votre prochaine échappée au Hibictus Royal Hotel. Notre formulaire de réservation vous permet de choisir vos dates, votre type de chambre et d'ajouter des services optionnels pour personnaliser votre expérience.</p>
+            <p>Pour toute demande spéciale ou réservation de groupe, n'hésitez pas à <a href="contact.html" style="color: var(--accent);">nous contacter directement</a>.</p>
+        </section>
 
+        <section class="two-col reservation-container">
+            <div class="reservation-form-section">
+                <h2 class="section-title">Formulaire de réservation</h2>
+                
+                <form class="form reservation-form">
+                    <div class="form-group">
+                        <label for="fullname">Nom complet *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Votre nom et prénom">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresse email *</label>
+                        <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+33 6 01 23 45 67">
+                    </div>
+                    
+                    <div class="form-group two-col-form">
+                        <div>
+                            <label for="checkin">Date d'arrivée *</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div>
+                            <label for="checkout">Date de départ *</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="roomtype">Type de chambre *</label>
+                        <select id="roomtype" name="roomtype" required>
+                            <option value="">-- Choisissez une option --</option>
+                            <option value="confort">Chambre Hexa-Hepta (67€/nuit)</option>
+                            <option value="confort">Chambre Confort (80€/nuit)</option>
+                            <option value="excellence">Chambre Excellence (110€/nuit)</option>
+                            <option value="deluxe">Chambre Deluxe (150€/nuit)</option>
+                            <option value="diamant">Chambre Diamant (180€/nuit)</option>
+                            <option value="prestige">Suite Prestige (210€/nuit)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Nombre de personnes *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1" selected>1 personne</option>
+                            <option value="2">2 personnes</option>
+                            <option value="3">3 personnes</option>
+                            <option value="4">4 personnes</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Services optionnels</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="breakfast">
+                                <span>Petit-déjeuner buffet (+15€/personne/jour)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="parking">
+                                <span>Parking privé (+12€/jour)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="spa">
+                                <span>Forfait spa (+35€/personne)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services" value="transfer">
+                                <span>Transfert aéroport (+25€)</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Demandes spéciales</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Pour tous besoins particuliers !"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>J'accepte les <a href="legal.html" style="color: var(--accent);">conditions générales</a> *</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Vérifier la disponibilité et réserver</button>
+                    
+                    <p class="form-note">* Champs obligatoires. Vous recevrez une confirmation par email dans les 24h.</p>
+                </form>
+            </div>
+            
+            <div class="reservation-info-section">
+                <h2 class="section-title">Pourquoi réserver avec nous ?</h2>
+                
+                <div class="info-card">
+                    <h3>🔄 Politique flexible</h3>
+                    <p>Annulation gratuite jusqu'à 48h avant l'arrivée. Modification possible sans frais sous réserve de disponibilité.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>✅ Meilleur prix garanti</h3>
+                    <p>Vous trouvez moins cher ailleurs ? Nous égalisons le prix et vous offrons une réduction supplémentaire de 10%.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🎁 Avantages exclusifs</h3>
+                    <p>Réservation directe = accès aux offres spéciales, room upgrade si disponible, et welcome drink offert.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📞 Assistance dédiée</h3>
+                    <p>Notre équipe réservations est à votre écoute du lundi au samedi de 9h à 19h pour vous accompagner.</p>
+                </div>
+                
+                <div class="contact-box">
+                    <h3>Besoin d'aide ?</h3>
+                    <p>Notre équipe est là pour vous :</p>
+                    <p><strong>📞 Par téléphone :</strong> <a href="tel:+33600426769">+33 6 00 42 67 69</a></p>
+                    <p><strong>✉️ Par email :</strong> <a href="mailto:reservations@hibictus-royal.fr">reservations@hibictus-royal.fr</a></p>
+                    <p><strong>⏰ Horaires :</strong> Lundi - Samedi, 9h-19h</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="center-text faq-section">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quels moyens de paiement acceptez-vous ?</h3>
+                    <p>Cartes Visa, Mastercard, American Express. Paiement sécurisé via notre plateforme. Un acompte de 30% est requis pour confirmer la réservation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quelle est l'heure d'arrivée et de départ ?</h3>
+                    <p>Check-in à partir de 15h, check-out avant 11h. Possibilité de late check-out jusqu'à 14h sous réserve de disponibilité (+30€).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Acceptez-vous les animaux de compagnie ?</h3>
+                    <p>Oui, les petits animaux sont acceptés sur demande (20€/nuit supplémentaire). Merci de nous prévenir lors de la réservation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Proposez-vous des tarifs pour les séjours longs ?</h3>
+                    <p>Oui, pour les séjours de 7 nuits ou plus, contactez-nous pour bénéficier de notre offre spéciale longue durée.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section class="center-card">
-<form class="form">
-<label>Nom complet<input type="text" required></label>
-<label>Mail<input type="email" required></label>
-<label>Téléphone<input type="tel"></label>
-<label>Dates<select><option>Choisir</option></select></label>
-<button type="submit">Réserver</button>
-</form>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<a href="legal.html">Mentions légales</a>
-<a href="contact.html">Nous Contacter</a>
-<a href="mailto:info@example.com">Mail</a>
-<a href="tel:+33111111111">Téléphone</a>
-</footer>
+    <footer class="site-footer">
+        <a href="legal.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+        <a href="contact.html">Nous Contacter</a>
+        <a href="mailto:contact@hibictus-royal.fr">Mail</a>
+        <a href="tel:+33600426769">Téléphone</a>
+    </footer>
 </body>
 </html>
