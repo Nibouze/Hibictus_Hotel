@@ -12,7 +12,7 @@
     <header class="site-header">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo/titre_large.png" width="30%">
+                <img src="images/logo/titre_large.png" alt="Logo de l'hôtel avec le titre large">
             </a>
         </div>
 
@@ -84,7 +84,7 @@
                     <div class="form-group">
                         <label for="roomtype">Type de chambre *</label>
                         <select id="roomtype" name="roomtype" required>
-                            <option value="">-- Choisissez une option --</option>
+                            <option value="" disabled selected>-- Choisissez une option --</option>
                             <option value="confort">Chambre Hexa-Hepta (67€/nuit)</option>
                             <option value="confort">Chambre Confort (80€/nuit)</option>
                             <option value="excellence">Chambre Excellence (110€/nuit)</option>
@@ -97,7 +97,8 @@
                     <div class="form-group">
                         <label for="guests">Nombre de personnes *</label>
                         <select id="guests" name="guests" required>
-                            <option value="1" selected>1 personne</option>
+                            <option value="" disabled selected>-- Sélectionnez --</option>
+                            <option value="1">1 personne</option>
                             <option value="2">2 personnes</option>
                             <option value="3">3 personnes</option>
                             <option value="4">4 personnes</option>

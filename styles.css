@@ -67,6 +67,10 @@ body {
     font-weight: 700;
 }
 
+.logo img {
+    width:10vw;
+}
+
 .main-nav a {
     margin: 0 12px;
     color: var(--accent);
@@ -200,7 +204,8 @@ body {
 .card-img img {
     width: 100%;
     height: auto;
-    box-shadow: #000000;
+    box-shadow: 0 0 #000000;
+
 }
 
 .card h3 {
@@ -215,6 +220,10 @@ a h3 {
 .grid-3.chambres h3 {
     border-color: var(--main_color_1_darker);
     border-style: solid;
+}
+
+.chambre-title {
+    font-size:xx-large;
 }
 
 .card h4 {
@@ -877,7 +886,7 @@ a h3 {
     background-color: var(--bg_lighter);
     border-radius: 10px
 }
-.recognitions-section h2 {
+.recognitions-section h3 {
     margin-top: 0;
     text-align: left;
     padding-left: 5%;
@@ -1326,6 +1335,10 @@ a h3 {
    ========================================================================== */
 
 @media (max-width: 900px) {
+    .logo img {
+        width:25vw;
+    }
+
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
     }
