@@ -96,5 +96,6 @@ hibictus-royal/
 - **Contacts** : Mettre à jour dans `contact.html` et `legal.html`
 
 ---
-*Dernière mise à jour : Janvier 2026*
+*Dernière mise à jour : 7 Janvier 2026*
+
 *Projet développé pour l'Hôtel Hibictus Royal*
