@@ -63,9 +63,9 @@ hibictus-royal/
 - ✅ **Performances** : Pas de JavaScript, chargement rapide
 
 ## 👥 Équipe de Développement
-- **Joseph NION**
-- **Ugo ROLLO** 
-- **Antonin TEP**
+- **Joseph NION** : services.html, contact.html, cgv.html
+- **Ugo ROLLO** : activites.html, apropos.html, reservations.html
+- **Antonin TEP** : index.html, chambres.html, legal.html
 
 ## 🚀 Installation & Déploiement
 1. **Cloner le projet** (si en ligne)
@@ -79,21 +79,16 @@ hibictus-royal/
 2. **Faciliter les réservations** avec un formulaire intuitif
 3. **Informer les clients** sur les services disponibles
 4. **Renforcer la marque** avec un design premium
-5. **Rassurer les clients** avec des mentions légales complètes
+5. **Rassurer les clients** avec des informations approfondies
 
 ## 📈 Points Forts
 - **Design cohérent** sur toutes les pages
 - **Navigation intuitive** avec menu fixe
 - **Contenu riche** et descriptions détaillées
-- **Formulaire de réservation** complet
+- **Formulaire de réservation** complet (mais non fonctionnel car pas de JS ni de BDD)
 - **Responsive optimisé** pour tous les appareils
 - **Conforme RGPD** avec mentions légales complètes
 
-## 🔄 Maintenance
-- **Mises à jour** : Modifier directement les fichiers HTML/CSS
-- **Images** : Remplacer dans le dossier `images/`
-- **Tarifs** : Modifier dans `chambres.html` et `reservations.html`
-- **Contacts** : Mettre à jour dans `contact.html` et `legal.html`
 
 ---
 *Dernière mise à jour : 7 Janvier 2026*
